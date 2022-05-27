@@ -9,7 +9,7 @@ import { HelloService } from './api/v1';
 })
 export class AppComponent implements OnInit {
 
-  public helloMessage?: string;
+  public helloMessage: string = '';
   public apiDescription: string = '';
 
   constructor(private http: HttpClient, private hello: HelloService) { }
@@ -19,8 +19,12 @@ export class AppComponent implements OnInit {
       .subscribe(response => {
         this.apiDescription = JSON.stringify(response, null, 2);
       });
+  }
 
-    this.hello.get('Roni').subscribe(result => this.helloMessage = result.message);
+  updateName(event: any) {
+    this.hello
+      .get((event.target as HTMLInputElement).value)
+      .subscribe(result => this.helloMessage = result.message ?? '');
   }
 
 }
