@@ -8,3 +8,5 @@ Demo of Spring boot / Angular application and code generation
 4. Execute `./run.sh`
 
 Api location will be http://localhost:8080 and client location http://localhost:4200
+
+TODO: How to handle operationId -> methodname? Don't like get1, get2, etc.
