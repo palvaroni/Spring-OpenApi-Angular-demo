@@ -8,3 +8,5 @@ cd ./api
 
 cd ../client
 ng serve
+
+trap "trap - SIGTERM && kill -- -$$" SIGINT SIGTERM EXIT
