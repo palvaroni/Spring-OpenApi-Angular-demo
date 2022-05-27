@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
 @RestController
-@Tag(name = "Hello")
-@RequestMapping("/hello")
-public class HelloController {
+@Tag(name = "Goodbye")
+@RequestMapping("/goodbye")
+public class GoodbyeController {
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public MessageDTO get(@RequestParam(value = "name", defaultValue = "World") String name) {
-        return new MessageDTO(String.format("Hello %s!", name));
+        return new MessageDTO(String.format("Goodbye %s, see you again soon!", name));
     }
 }

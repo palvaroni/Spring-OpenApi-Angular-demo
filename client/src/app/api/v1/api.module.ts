@@ -2,6 +2,7 @@ import { NgModule, ModuleWithProviders, SkipSelf, Optional } from '@angular/core
 import { Configuration } from './configuration';
 import { HttpClient } from '@angular/common/http';
 
+import { GoodbyeService } from './api/goodbye.service';
 import { HelloService } from './api/hello.service';
 
 @NgModule({

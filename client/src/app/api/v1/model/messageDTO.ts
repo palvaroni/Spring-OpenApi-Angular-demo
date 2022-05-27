@@ -11,7 +11,8 @@
  */
 
 
-export interface HelloDTO { 
+export interface MessageDTO { 
     message?: string;
+    timestamp?: string;
 }
 

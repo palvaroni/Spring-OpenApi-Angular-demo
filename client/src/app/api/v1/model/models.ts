@@ -1,1 +1,1 @@
-export * from './helloDTO';
+export * from './messageDTO';

@@ -2,7 +2,8 @@
   <h1>Demosivu</h1>
   <p>Please tell you name and hit enter!</p>
   <label for="yourname">Your name: </label>
-  <input #nameInput type="text" name="yourname" id="yourname" (change)="updateName($event)">
+  <input type="text" name="yourname" id="yourname" (change)="updateName($event)">
+  <button for="yourname" role="submit" name="submit" id="submit" aria-label="Submit your name">Submit</button>
   <hr />
   <p>{{helloMessage}}</p>
   <h2>Active api description</h2>
