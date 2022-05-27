@@ -7,4 +7,4 @@ Demo of Spring boot / Angular application and code generation
 3. Install NodeJS 16.15
 4. Execute `./run.sh`
 
-Api location will be http://localhost:8080 and cliend location http://localhost:4200
+Api location will be http://localhost:8080 and client location http://localhost:4200
